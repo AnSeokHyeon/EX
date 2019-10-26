@@ -5,7 +5,7 @@ const express = require('express')
 const socket = require('socket.io')
 
 /* Node.js 기본 내장 모듈 불러오기 */
-const http = require('http')
+const http = require('http');
 
 /* Node.js 기본 내장 모듈 불러오기 */
 const fs = require('fs')
