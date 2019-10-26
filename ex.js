@@ -25,14 +25,14 @@ ex.get('/', function (request, response) {
 
 io.sockets.on('connection', function (socket) {
     console.log('유저 접속됨')
-    socket.on('send', function (data) {
+    socket.on('send', function(data) {
         console.log('전달된 메세지 : ', data.msg)
     })
-    socket.on('disconnect', function () {
+    socket.on('disconnect', function() {
         console.log('접속 종료')
     })
 })
 
-server.listen('8080', function () {
+server.listen('8080', function() {
     console.log('구축 완료')
 })
